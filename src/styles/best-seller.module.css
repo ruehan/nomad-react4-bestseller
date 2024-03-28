@@ -1,0 +1,28 @@
+.container {
+	width: 70%;
+	max-height: fit-content;
+	/* height: 100%; */
+	border: 1px solid black;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	padding: 20px;
+}
+
+.list {
+	max-width: fit-content;
+	border: 1px solid purple;
+	margin: 15px;
+	padding: 30px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+
+.list:hover {
+	transform: scale(1.1);
+	transition: 200ms;
+}

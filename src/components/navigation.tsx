@@ -8,12 +8,11 @@ export default function Navigation() {
 	const path = usePathname();
 	return (
 		<nav className={styles.nav}>
-			<div className={styles.title}>
-				<Link href="/">Home</Link> {path === "/" ? "🔥" : ""}
+			<div className={path === "/" ? styles.navOn : styles.navOff}>
+				<Link href="/">Home</Link>
 			</div>
-			<div className={styles.title}>
+			<div className={path === "/" ? styles.navOff : styles.navOn}>
 				<Link href="/about">About</Link>
-				{path === "/about" ? "🔥" : ""}
 			</div>
 		</nav>
 	);

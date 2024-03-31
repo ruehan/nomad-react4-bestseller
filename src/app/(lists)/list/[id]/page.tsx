@@ -1,7 +1,6 @@
 import BestSellerList from "@/components/best-seller-list";
+import { Spinner } from "@nextui-org/react";
 import { Suspense } from "react";
-
-export const API_URL = "https://books-api.nomadcoders.workers.dev/list";
 
 export default async function BestSellerListPage({
 	params: { id },
@@ -10,7 +9,17 @@ export default async function BestSellerListPage({
 }) {
 	return (
 		<>
-			<Suspense fallback={<h1>Loading...</h1>}>
+			<Suspense
+				fallback={
+					<div
+						style={{
+							marginTop: "150px",
+						}}
+					>
+						Loading..
+					</div>
+				}
+			>
 				<BestSellerList id={id} />
 			</Suspense>
 		</>

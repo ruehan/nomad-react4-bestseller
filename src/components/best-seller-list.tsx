@@ -1,10 +1,10 @@
 import { BooklistType } from "@/interface/types";
 import styles from "../styles/best-seller-list.module.css";
 import dynamic from "next/dynamic";
-import { API_URL } from "@/app/constants";
+import { API_URL_DETAIL } from "@/app/constants";
 
 async function getBestSellerList(id: string) {
-	const response = await fetch(`${API_URL}?name=${id}`);
+	const response = await fetch(`${API_URL_DETAIL}?name=${id}`);
 
 	return response.json();
 }

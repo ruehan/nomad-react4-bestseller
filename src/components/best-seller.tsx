@@ -2,10 +2,10 @@ import { BestSellerType } from "@/interface/types";
 import Link from "next/link";
 import styles from "../styles/best-seller.module.css";
 import { Card, CardBody } from "@nextui-org/react";
-import { API_URL_DETAIL } from "@/app/constants";
+import { API_URL } from "@/app/constants";
 
 async function getBestSeller() {
-	const response = await fetch(API_URL_DETAIL);
+	const response = await fetch(API_URL);
 	return response.json();
 }
 

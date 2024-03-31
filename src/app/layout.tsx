@@ -3,7 +3,7 @@ import "../styles/global.css";
 import { Amatic_SC } from "next/font/google";
 
 export const metadata = {
-	title: "BestSelelr",
+	title: "THE NEW YORK TIMES BEST SELLER EXPLORER",
 };
 
 const amatic = Amatic_SC({ subsets: ["latin"], weight: ["700"] });
